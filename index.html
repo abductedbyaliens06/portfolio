@@ -1,19 +1,100 @@
-<!DOCTYPE html>
- <html lang="eng">
-    <head>
-        <meta charset="UTF-8">
-        <title>AryansPortfolio</title>
-    </head>
-    <body>
-        <h1>Aryan Bajaj's Portfolio</h1>
-        <h2>Im a Web Developer</h2>
-        <hr />
-        <a href="./public/Movie-Ranking.html"><h3>Movie Ranking Project</h3></a>
-        <img src="./assets/images/movie-ranking.png" height="400">
-        <a href="./public/birthday-invite.html"><h3>Birthday Invite Project</h3></a>
-        <img src="./assets/images/birthday-invite.png" height="400">
-        <hr />
-        <a href="./public/contact.html">Contact me<br /></a>
-        <a href="./public/about.html">About Me</a>
-    </body>
- </html>
+ <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aryan's Portfolio</title>
+    <style>
+      body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(to right, #f0f4f8, #d9e2ec);
+        margin: 0;
+        padding: 0;
+        color: #2c3e50;
+        text-align: center;
+      }
+
+      h1 {
+        font-size: 3rem;
+        margin-top: 40px;
+        color: #1f2937;
+      }
+
+      h2 {
+        font-weight: 400;
+        margin-top: -10px;
+        color: #374151;
+      }
+
+      hr {
+        width: 80%;
+        border: 1px solid #ccc;
+        margin: 40px auto;
+      }
+
+      a {
+        text-decoration: none;
+        color: #2563eb;
+      }
+
+      a:hover h3 {
+        color: #1e40af;
+        text-decoration: underline;
+      }
+
+      .project {
+        margin: 40px auto;
+        width: 80%;
+        max-width: 800px;
+        background-color: #ffffff;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        transition: transform 0.3s ease;
+      }
+
+      .project:hover {
+        transform: scale(1.02);
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+        margin-top: 15px;
+      }
+
+      footer a {
+        display: inline-block;
+        margin: 20px 15px;
+        font-weight: 500;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Aryan Bajaj's Portfolio</h1>
+    <h2>I'm a Web Developer</h2>
+    <hr />
+
+    <div class="project">
+      <a href="./public/Movie-Ranking.html">
+        <h3>🎬 Movie Ranking Project</h3>
+        <img src="./assets/images/movie-ranking.png" alt="Movie Ranking Screenshot" />
+      </a>
+    </div>
+
+    <div class="project">
+      <a href="./public/birthday-invite.html">
+        <h3>🎉 Birthday Invite Project</h3>
+        <img src="./assets/images/birthday-invite.png" alt="Birthday Invite Screenshot" />
+      </a>
+    </div>
+
+    <hr />
+
+    <footer>
+      <a href="./public/contact.html">Contact Me</a>
+      <a href="./public/about.html">About Me</a>
+    </footer>
+  </body>
+</html>
